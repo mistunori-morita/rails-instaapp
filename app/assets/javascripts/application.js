@@ -16,3 +16,15 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+//= require masonry/jquery.masonry
+
+
+
+  $(function(){
+    $('#masonry-container').masonry({
+      itemSelector: '.box',
+      columnWidth: 200,
+      isAnimated: !Modernizr.csstransitions,
+      isFitWidth: true
+    });
+  });

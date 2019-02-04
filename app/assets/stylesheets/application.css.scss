@@ -12,7 +12,17 @@
  *
  *= require_tree .
  *= require_self
+ *= require 'masonry/transitions'
  */
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+
+.panel{
+  padding: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  img{
+    width: 100%;
+  }
+}
